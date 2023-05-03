@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Converter</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-dark"><br><br><br><br>
+	<h1 class="text-info"><center>Seconds Converter</center></h1><br>
+	<center><img src="https://www.pngarts.com/files/1/Time-Waste-PNG-High-Quality-Image.png" height="250" width="250"></center><br>
+	<div class="bg-secondary"><center><br>
+		<input type="number" id="time" placeholder="Enter units here"><br><br><br>
+		<input type="submit" value="Seconds to Minutes" onclick="myMinutes()" class="btn btn-success btn-lg">
+		<input type="submit" value="Seconds to Hours" onclick="myHours()" class="btn btn-warning btn-lg">
+		<input type="submit" value="Seconds to Days" onclick="myDays()" class="btn btn-danger btn-lg"><br><br>
+		<p id="convertion"></p>
+		<script>
+			function myMinutes() {
+				var seconds = document.getElementById('time').value;	
+				var converted = seconds / 60;
+				window.alert("The answer is " + converted);
+			}
+			function myHours() {
+				var seconds = document.getElementById('time').value;	
+				var converted = seconds / 3600;
+				window.alert("The answer is " + converted);
+			}
+			function myDays() {
+				var seconds = document.getElementById('time').value;	
+				var converted = seconds / 86400;
+				window.alert("The answer is " + converted);
+			}
+		</script></center>
+	</div>
+</body>
+</html>
